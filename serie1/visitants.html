@@ -1,7 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Visitantes Externos - Escola do 2º Grau</title>
+  <title>Visitantes Externos - Escola Cooperativa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    nav {
+      width: 200px;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      padding-top: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #575757;
+    }
+    .main-content {
+      margin-left: 210px;
+      padding: 20px;
+    }
+    h1 {
+      margin-left: 210px; 
+    }
+    footer {
+      position: fixed;  /* ou 'absolute' */
+      left: 210px;
+      bottom: 0;
+    }
+    @media (max-width: 768px) {
+      nav {
+        width: 100%;
+        position: static;
+      }
+      h1, .main-content, footer {
+        margin-left: 0;
+        padding: 10px;
+      }
+      footer {
+        position: static;
+        text-align: right;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1>Bem-vindo, Visitantes Externos!</h1>
@@ -9,10 +64,13 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="students.html">Alunos</a></li>
-      <li><a href="teacher.html">Professores</a></li>
+      <li><a href="teachers.html">Professores</a></li>
       <li><a href="administrations.html">Administração</a></li>
     </ul>
   </nav>
-  <!-- Conteúdo -->
+  <footer>
+    <p>Endereço: Rua Mario Bonifacio, 150 - Jardim Nova Ipanema, Presidente Venceslau - São Paulo, 19400-000 </p>
+    <p>Telefone: (18) 3271-5693</p>
+  </footer>
 </body>
 </html>
