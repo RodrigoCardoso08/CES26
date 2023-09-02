@@ -39,7 +39,6 @@ function playSound(id) {
 }
 
 function drawPlane() {
-    console.log("planeImg = ", planeImg);
     if (planeImg.complete) {
       ctx.drawImage(planeImg, plane.x, plane.y, plane.width, plane.height);
     }
@@ -81,12 +80,15 @@ function gameLoop() {
 }
 
 canvas.addEventListener("mousemove", function (event) {
+  console.log("mousemove event = ", event);
   const rect = canvas.getBoundingClientRect();
-  plane.x = event.clientX - rect.left;
-  plane.y = event.clientY - rect.top;
+  console.log("rect = ", rect)
+  plane.x = event.clientX - rect.left/2;
+  plane.y = event.clientY - rect.top/2;
 });
 
 canvas.addEventListener("contextmenu", function (event) {
+  console.log("contextMenu event = ", event);
   event.preventDefault();
   missile.fired = true;
   playSound("missileSound");
