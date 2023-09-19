@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Tree Editor</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .selected {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div>Elemento 1
+      <div>Elemento 1.1</div>
+      <div>Elemento 1.2</div>
+    </div>
+    <div>Elemento 2</div>
+  </div>
+
+  <button id="remove">Remover</button>
+  <button id="add">Adicionar Filho</button>
+  <button id="change">Mudar Propriedades</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
